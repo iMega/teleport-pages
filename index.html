@@ -1,0 +1,14 @@
+---
+layout: default
+title: Взаимосвязь интернет-магазина и 1С
+---
+
+<article data-ng-controller="signupCtrl as signup">
+    <header data-ng-init="signup.activate()"><div class="row"><h3>Начать использовать</h3></div></header>
+    <section>
+        <div class="row">
+            <input type="text" data-ng-model="signup.email">
+            <button type="button" class="button ng-cloak" data-ng-click="signup.sendInvite()">Получить приглашение</button>
+        </div>
+    </section>
+</article>

@@ -1,0 +1,6 @@
+title: iMegaTeleport
+url: http://teleport.imega.club
+
+sass:
+  sass_dir: _scss
+  style:    :compressed
