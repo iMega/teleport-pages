@@ -1,0 +1,38 @@
+---
+layout: default
+title: Взаимосвязь интернет-магазина и 1С
+permalink: features/
+---
+<div class="container" role="document">
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns" id="content" role="main" style="border: 1px solid black">
+            <div class="row">
+                <div class="small-12 medium-6 large-4 columns" style="border: 1px solid black">
+                    <h3>Как это работает?</h3>
+                    iMegaTeleport обеспечивает взаимосвязь интернет-магазина (Woocommerce, Viper Fabthemes) и приложения управления торговлей 1С через базовый модуль «обмен 1С и сайта», встроенного в конфигурациях 1С: Управление торговлей, Торговля и склад, Управление производственным предприятием, а также в некоторых других продуктах 1С или МойСклад.
+                </div>
+                <div class="small-12 medium-6 large-4 columns" style="border: 1px solid black">
+                    <h3>Какие данные?</h3>
+                    iMegaTeleport выгружает данные о товаре: название, цена, свойства и характеристики товара, описание и изображение, доступный остаток товара, а также структуру каталога товаров (группы номенклатуры).
+                    <article class="show-for-medium-only">
+                        <h3>Ограничения есть?</h3>
+                        Количество товаров, которое можно выгрузить ограничено возможностями сервера, на котором работает программа 1С.
+                    </article>
+                </div>
+                <div class="small-12 large-4 columns hide-for-medium-only" style="border: 1px solid black">
+                    <h3>Ограничения есть?</h3>
+                    Количество товаров, которое можно выгрузить ограничено возможностями сервера, на котором работает программа 1С.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<article data-ng-controller="signupCtrl as signup">
+    <header data-ng-init="signup.activate()"><div class="row"><h3>Начать использовать</h3></div></header>
+    <section>
+        <div class="row">
+            <input type="text" data-ng-model="signup.email">
+            <button type="button" class="button ng-cloak" data-ng-click="signup.sendInvite()">Получить приглашение</button>
+        </div>
+    </section>
+</article>

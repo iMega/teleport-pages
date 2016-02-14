@@ -1,37 +1,112 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="teleportApp" itemscope itemtype="http://schema.org/Product">
-    {% include head.html %}
-<header class="big-poster">
-
-</header>
-
-<article>
-    <header>
-        <div class="row">
+<html class="no-js" lang="en" ng-app="teleportApp" itemscope
+      itemtype="http://schema.org/Product">
+{% include head.html %}
+<body>
+<header class="it-header">
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
             <h1 class="text-center">iMega Teleport 2</h1>
         </div>
-    </header>
-</article>
-
-{{ content }}
-
-<footer class="dark">
-    <div class="row -table">
-        <div class="large-4 columns">
-            <h4>© Copyright 2015 iMega - All Rights Reserved</h4>
-        </div>
-        <div class="large-8 columns">
-            <ul class="menu vertical">
-                <li><a href="http://imega.club">iMega's blog</a></li>
-                <li><a href="https://github.com/iMega">iMega’s GitHub account</a></li>
-                <li><a href="https://hub.docker.com/u/imega/">iMega’s Docker Hub account</a></li>
-                <li><a href="https://twitter.com/iMegaCompany">iMega’s Twitter account</a></li>
-                <li><a href="https://www.facebook.com/iMegaCompany">iMega’s Facebook account</a></li>
-            </ul>
-        </div>
     </div>
+</header>
+{{ content }}
+<footer class="it-footer">
+    <header class="footer-t-piece">
+        <div class="row">
+            <div class="small-12 medium-12 large-12 columns">
+                <div class="small-12 medium-6 large-4 columns">
+                    <ul class="menu vertical">
+                        <li><a href=/features>Возможности</a></li>
+                        <li><a href=/faq>Часто задаваемые вопросы</a></li>
+                        <li><a href=/feedback>Обратная связь</a></li>
+                        <li><a href=/contactus>Контакты</a></li>
+                        <li><a href=/donate>Сделать пожертвование</a></li>
+                    </ul>
+                </div>
+                <div class="small-12 medium-6 large-4 columns hide-for-small-only">
+                    <ul class="menu vertical">
+                        <li>
+                            <a href=https://www.facebook.com/imegateleport
+                               rel=publisher>Facebook</a>
+                        </li>
+                        <li>
+                            <a href=https://plus.google.com/113394877517404324603
+                               rel=publisher>Google+</a>
+                        </li>
+                        <li>
+                            <a href=https://twitter.com/iMegaCompany rel=publisher>Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="small-12 medium-6 large-4 columns show-for-small-only">
+                    <ul class="menu">
+                        <li><a href="https://www.facebook.com/imegateleport"
+                               title="Facebook"
+                               target="_blank">
+                                <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook-s.png"
+                                     alt="Facebook"
+                                     title="Facebook"
+                                     width="20"
+                                     height="20">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/iMegaCompany"
+                               title="Twitter"
+                               target="_blank">
+                                <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter-s.png"
+                                     alt="Twitter"
+                                     title="Twitter"
+                                     width="20"
+                                     height="20">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/113394877517404324603"
+                               title="Google+"
+                               target="_blank">
+                                <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-googleplus-s.png"
+                                     alt="Google+"
+                                     title="Google+"
+                                     width="20"
+                                     height="20">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="small-12 medium-6 large-4 columns">
+                    <ul class="menu vertical">
+                        <li><a href="http://imega.club">iMega's blog</a></li>
+                        <li><a href="https://github.com/iMega">iMega’s GitHub
+                            account</a></li>
+                        <li><a href="https://hub.docker.com/u/imega/">iMega’s Docker
+                            Hub account</a></li>
+                        <li><a href="https://twitter.com/iMegaCompany">iMega’s
+                            Twitter account</a></li>
+                        <li><a href="https://www.facebook.com/iMegaCompany">iMega’s
+                            Facebook account</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-12 medium-12 large-12 columns text-center">
+                <img src="/img/z003.png" class="logo-piece-top">
+            </div>
+        </div>
+    </header>
+    <section class="footer-b-piece">
+        <div class="row">
+            <div class="small-12 medium-12 large-12 columns text-center">
+                <img src="/img/z004.png" class="logo-piece-bottom">
+            </div>
+            <div class="small-12 medium-12 large-12 columns text-center">
+                <p class="copyright">© Copyright
+                <script>document.write(new Date().getFullYear());</script>
+                iMega - <br class="show-for-small-only">All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
 </footer>
-
 <script src="/js/common.js" type="text/javascript"></script>
 </body>
 </html>

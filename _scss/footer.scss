@@ -1,0 +1,27 @@
+.it-footer {
+    .footer-t-piece {
+        background-color: #323341;
+        padding-top: 13px;
+        .logo-piece-top {
+            width: 144px;
+        }
+        a {
+            color: #FE7F2D;
+        }
+        a:hover {
+            color: #FF9B54;
+        }
+        a:visited {
+            color: #FF7F51;
+        }
+    }
+    .footer-b-piece {
+        background-color: #61626F;
+        .logo-piece-bottom {
+            width: 144px;
+        }
+        .copyright {
+            margin: 21px 0 55px;
+        }
+    }
+}

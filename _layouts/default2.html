@@ -1,0 +1,910 @@
+<!doctype html>
+
+
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+
+
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US" prefix="og: http://ogp.me/ns#" > <![endif]-->
+
+
+
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US" prefix="og: http://ogp.me/ns#" > <![endif]-->
+
+
+
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US" prefix="og: http://ogp.me/ns#" "> <![endif]-->
+
+
+
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+
+
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#" > <!--<![endif]-->
+
+
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+
+
+
+
+
+
+
+    <title>BeeFree: A free, online email editor with responsive design</title>
+
+
+
+
+
+
+
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+
+
+
+    <meta name="viewport" content="width=device-width" />
+
+
+
+
+
+
+
+    <!--  iPhone Web App Home Screen Icon -->
+
+    <!-- For non-Retina (@1× display) iPhone, iPod Touch, and Android 2.1+ devices: -->
+
+    <link rel="apple-touch-icon-precomposed" href="http://blog.mailup.com/wp-content/themes/reverie-master/images/apple-touch-icon-57.png"><!-- 57×57px -->
+
+
+
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS min./uguale 6: -->
+
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://blog.mailup.com/wp-content/themes/reverie-master/images/apple-touch-icon-72.png">
+
+
+
+    <!-- For iPhone with @2× display running iOS min./uguale 6: -->
+
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://blog.mailup.com/wp-content/themes/reverie-master/images/apple-touch-icon-114.png">
+
+
+
+    <!-- For iPhone with @2× display running iOS mag./uguale 7: -->
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://blog.mailup.com/wp-content/themes/reverie-master/images/apple-touch-icon-120.png">
+
+
+
+    <!-- For Chrome for Android: -->
+
+    <link rel="icon" sizes="192x192" href="http://blog.mailup.com/wp-content/themes/reverie-master/images/apple-touch-icon-192.png">
+
+
+
+
+
+    <!-- Favicon and Feed -->
+
+    <link rel="shortcut icon" type="image/ico" href="http://blog.mailup.com/wp-content/themes/reverie-master/images/favicon.png">
+
+    <link rel="alternate" type="application/rss+xml" title="MailUp Blog Feed" href="http://blog.mailup.com/feed/">
+
+
+
+
+
+    <!-- Typekit -->
+
+    <script type="text/javascript">
+
+        (function(d) {
+
+            var config = {
+
+                        kitId: 'bvy6wuf',
+
+                        scriptTimeout: 3000
+
+                    },
+
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+
+        })(document);
+
+    </script>
+
+    <!-- //Typekit -->
+
+
+
+
+
+
+    <link rel='stylesheet' href="http://www.mailup.com/wp-content/themes/mailup/css/main.css" type='text/css' media='all' />
+
+
+    <link rel='stylesheet' href="http://blog.mailup.com/wp-content/themes/reverie-master/css/font.css" type='text/css' media='all' />
+
+
+
+
+    <!-- This site is optimized with the Yoast WordPress SEO plugin v2.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="Design stunning, fully responsive emails without the need of any HTML or CSS coding know-how with the BeeFree drag and drop email editor."/>
+    <link rel="canonical" href="http://blog.mailup.com/2014/10/free-online-email-editor-html-responsive-design-beefree-mailup/" />
+    <link rel="publisher" href="https://plus.google.com/+MailupInc"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BeeFree: A free, online email editor with responsive design" />
+    <meta property="og:description" content="Design stunning, fully responsive emails without the need of any HTML or CSS coding know-how with the BeeFree drag and drop email editor." />
+    <meta property="og:url" content="http://blog.mailup.com/2014/10/free-online-email-editor-html-responsive-design-beefree-mailup/" />
+    <meta property="og:site_name" content="MailUp Blog" />
+    <meta property="article:publisher" content="https://www.facebook.com/mailupinc" />
+    <meta property="article:tag" content="MailUp" />
+    <meta property="article:section" content="Company news" />
+    <meta property="article:published_time" content="2014-10-14T10:37:24+00:00" />
+    <meta property="article:modified_time" content="2016-02-02T05:22:12+00:00" />
+    <meta property="og:updated_time" content="2016-02-02T05:22:12+00:00" />
+    <meta property="og:image" content="http://blog.mailup.com/wp-content/uploads/bee_free-logo.png" />
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description" content="Design stunning, fully responsive emails without the need of any HTML or CSS coding know-how with the BeeFree drag and drop email editor."/>
+    <meta name="twitter:title" content="BeeFree: A free, online email editor with responsive design"/>
+    <meta name="twitter:site" content="@mailup_us"/>
+    <meta name="twitter:domain" content="MailUp Blog"/>
+    <meta name="twitter:image:src" content="http://blog.mailup.com/wp-content/uploads/bee_free-logo.png"/>
+    <meta name="twitter:creator" content="@sergiomandrone"/>
+    <!-- / Yoast WordPress SEO plugin. -->
+
+    <link rel="alternate" type="application/rss+xml" title="MailUp Blog &raquo; Feed" href="http://blog.mailup.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="MailUp Blog &raquo; Comments Feed" href="http://blog.mailup.com/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="MailUp Blog &raquo; BeeFree: A free, online email editor with built-in responsive design Comments Feed" href="http://blog.mailup.com/2014/10/free-online-email-editor-html-responsive-design-beefree-mailup/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/blog.mailup.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+        !function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='default-template-css'  href='http://blog.mailup.com/wp-content/plugins/really-simple-facebook-twitter-share-buttons/extension/readygraph/assets/css/default-popup.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='reverie-foundation-stylesheet-css'  href='http://blog.mailup.com/wp-content/themes/reverie-master/css/app.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='reverie-stylesheet-css'  href='http://blog.mailup.com/wp-content/themes/reverie-master/css/style.css' type='text/css' media='all' />
+    <!--[if lt IE 9]>
+    <link rel='stylesheet' id='reverie-ie-only-css'  href='http://blog.mailup.com/wp-content/themes/reverie-master/css/ie.css' type='text/css' media='all' />
+    <![endif]-->
+    <link rel='stylesheet' id='really_simple_share_style-css'  href='http://blog.mailup.com/wp-content/plugins/really-simple-facebook-twitter-share-buttons/style.css' type='text/css' media='all' />
+    <script type='text/javascript' src='https://platform.linkedin.com/in.js'></script>
+    <script type='text/javascript' src='http://blog.mailup.com/wp-includes/js/jquery/jquery.js'></script>
+    <script type='text/javascript' src='http://blog.mailup.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='http://blog.mailup.com/wp-content/themes/reverie-master/js/modernizr.js'></script>
+    <link rel='shortlink' href='http://blog.mailup.com/?p=1846' />
+    <script type="text/javascript">
+        //<![CDATA[
+
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+        window.___gcfg = {lang: "en"};
+        (function() {
+            var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+            po.src = "https://apis.google.com/js/plusone.js";
+            var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+        })();
+
+        //]]>
+    </script>
+    <link rel='stylesheet' href="http://blog.mailup.com/wp-content/themes/reverie-master/style.css" type='text/css' media='all' />
+    <link rel='stylesheet' href="http://blog.mailup.com/wp-content/themes/reverie-master/css/header.css" type='text/css' media='all' />
+
+
+
+
+    <!-- validator -->
+
+
+
+    <link rel="stylesheet" href="http://www.mailup.com/wp-content/themes/mailup/plugins/jQueryValidationEngine/css/validationEngine.jquery.css" type="text/css"/>
+
+
+
+    <link rel="stylesheet" href="http://www.mailup.com/wp-content/themes/mailup/plugins/jQueryValidationEngine/css/template.css" type="text/css"/>
+
+
+
+    <script src="http://www.mailup.com/wp-content/themes/mailup/plugins/jQueryValidationEngine/js/languages/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+    <script src="http://www.mailup.com/wp-content/themes/mailup/plugins/jQueryValidationEngine/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://blog.mailup.com/wp-content/themes/reverie-master/js/lib.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+    <script>
+
+
+
+        jQuery(document).ready(function(){
+
+
+
+            // binds form submission and fields to the validation engine
+
+
+
+            jQuery("#iscrizionenewsletter").validationEngine('attach',{
+
+
+
+                'showPrompts':true,
+
+
+
+                scroll:false,
+
+
+
+            });
+
+        });
+
+
+
+    </script>
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="single single-post postid-1846 single-format-standard antialiased">
+<script>
+    jQuery(document).ready(function() {
+        var banner = 'banner_whitepaper_design';
+
+        if(checkLS(banner)==1){
+            jQuery("."+banner).remove();
+        }
+
+        jQuery("."+banner + " span").click(function(e){
+            writeLS(banner);
+            jQuery("."+banner).remove();
+        });
+    });
+
+    function checkLS(banner){
+        var lsItem = localStorage.getItem(banner);
+        var lsItem_time = localStorage.getItem(banner+"_time");
+        var delta_time = dateNow() - lsItem_time;
+
+        // one week
+        var gap_time = 86400000 * 7;
+
+        console.log(lsItem_time + "/" + dateNow() + "/" + delta_time + "/" + gap_time);
+
+        if(lsItem == 1) {
+            if(delta_time < gap_time) {
+                return 1;
+            }
+            else {
+                localStorage.removeItem(banner);
+                localStorage.removeItem(banner + "_time");
+                return 0;
+            }
+        }
+        else {
+            return 0;
+        }
+    }
+
+    function writeLS(banner){
+        localStorage.setItem(banner, 1);
+        localStorage.setItem(banner + "_time", dateNow());
+    }
+
+    function dateNow(){
+        var d = new Date();
+        var n = d.getTime();
+
+        return n;
+    }
+
+</script>
+<div class="banner_whitepaper_design move">
+    <span><img src="http://blog.mailup.com/wp-content/themes/reverie-master/images/banner_whitepaper_design_close.png" alt="close" title="close"></span>
+    <a href="http://lp.mailup.com/en/whitepaper_email_design/?utm_source=blog&utm_medium=banner&utm_content=emaildesign&utm_campaign=whitepaper" target="_blank">
+        <img src="http://blog.mailup.com/wp-content/themes/reverie-master/images/banner_whitepaper_design_large.png" alt="Your 2016 Guide to Email Design. Download Now!" title="Your 2016 Guide to Email Design. Download Now!">
+    </a>
+</div>
+
+<div class="banner_whitepaper_design banner_whitepaper_design_small move">
+    <span><img src="http://blog.mailup.com/wp-content/themes/reverie-master/images/banner_whitepaper_design_close.png" alt="close" title="close"></span>
+    <a href="http://lp.mailup.com/en/whitepaper_email_design/?utm_source=blog&utm_medium=banner&utm_content=emaildesign&utm_campaign=whitepaper" target="_blank">
+        <img src="http://blog.mailup.com/wp-content/themes/reverie-master/images/banner_whitepaper_design_small.png" alt="Your 2016 Guide to Email Design. Download Now!" title="Your 2016 Guide to Email Design. Download Now!">
+    </a>
+</div>
+
+
+
+
+
+<!--
+	<div id="firstModal" class="reveal-modal small" data-reveal>
+
+
+
+   		<iframe src="http://www.mailup.com/privacy.htm" frameborder="0" allowfullscreen></iframe>
+
+
+
+  		<a class="close-reveal-modal">&#215;</a>
+
+
+
+	</div>-->
+
+
+
+
+
+
+<!-- header -->
+
+<div id="hd">
+
+    <header>
+        <div id="wrapper_header">
+            <div class="main_logo">
+                <a itemprop="url" title="Email Marketing Software | MailUp" href="http://www.mailup.com">
+                    <img width="133" height="47" itemprop="logo" title="Email Marketing Software | MailUp" alt="Email Marketing Software | MailUp" src="http://www.mailup.com/wp-content/themes/mailup/images/logo_mailup.png">
+                </a>
+            </div>
+
+            <div id="wrapper_menu_btn">
+                <div id="testit" class="btn-bk15">
+                    <a target="_blank" href="http://lp.mailup.com/en/free-trial/">FREE TRIAL</a>
+                </div>
+                <div id="login" class="btn-bk16">
+                    <a href="https://login.mailup.com">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div id="hm">
+    <header>
+        <section>
+            <div class="main_logo">
+                <a itemprop="url" title="Email Marketing Software | MailUp" href="http://www.mailup.com">
+                    <img width="133" height="47" itemprop="logo" title="Email Marketing Software | MailUp" alt="Email Marketing Software | MailUp" src="http://www.mailup.com/wp-content/themes/mailup/images/logo_mailup.png">
+                </a>
+            </div>
+
+        </section>
+    </header>
+</div>
+
+
+<!-- /header -->
+
+
+
+
+
+<!-- Starting the Top-Bar -->
+
+
+
+<nav class="top-bar bkg06" data-topbar>
+
+
+
+    <ul class="title-area">
+
+
+
+        <li class="name">
+
+
+
+            <h3><a href="http://blog.mailup.com/" title="MailUp Blog" rel="home">MailUp Blog</a></h3>
+
+
+
+        </li>
+
+
+
+    </ul>
+
+
+
+    <section class="top-bar-section bkg06">
+
+
+
+        <ul class="centrato"><li class="divider" style="display:none"></li><li id="menu-item-3309" class="menu-item menu-item-main-menu menu-item-home"><a  href="http://blog.mailup.com/">Home</a></li>
+            <li class="divider" style="display:none"></li><li id="menu-item-3308" class="current-post-ancestor current-post-parent menu-item menu-item-main-menu menu-item-email-marketing"><a  href="http://blog.mailup.com/category/email-marketing/">Email Marketing</a></li>
+            <li class="divider" style="display:none"></li><li id="menu-item-1956" class="menu-item menu-item-main-menu menu-item-deliverability"><a  href="http://blog.mailup.com/category/deliverability-2/">Deliverability</a></li>
+            <li class="divider" style="display:none"></li><li id="menu-item-3307" class="current-post-ancestor current-post-parent menu-item menu-item-main-menu menu-item-product"><a  href="http://blog.mailup.com/category/product/">Product</a></li>
+            <li class="divider" style="display:none"></li><li id="menu-item-1958" class="current-post-ancestor current-post-parent menu-item menu-item-main-menu menu-item-company-news"><a  href="http://blog.mailup.com/category/company-news/">Company news</a></li>
+        </ul>
+
+
+    </section>
+
+
+
+</nav>
+
+
+
+<!-- End of Top-Bar -->
+
+
+
+</header>
+
+
+
+
+
+
+
+<!-- Start the main container -->
+
+
+
+<div class="container" role="document">
+
+
+
+    <div class="row">
+        <!-- Row for main content area -->
+        <div class="small-12 large-8 columns" id="content" role="main">
+
+            <article class="post-1846 post type-post status-publish format-standard has-post-thumbnail hentry category-company-news category-email-marketing category-product tag-mailup" id="post-1846">
+                <header>
+                    <ul class="post-categories">
+                        <li><a href="http://blog.mailup.com/category/company-news/" rel="category tag">Company news</a></li>
+                        <li><a href="http://blog.mailup.com/category/email-marketing/" rel="category tag">Email Marketing</a></li>
+                        <li><a href="http://blog.mailup.com/category/product/" rel="category tag">Product</a></li></ul><a href="#"></a> | <span class="byline author">Written by <a href="http://blog.mailup.com/author/sergio-mandrone/" rel="author" class="fn">Sergio Mandrone</a>, </span><date class="updated" datetime="2014-10-14T10:37:24+00:00" pubdate>10/14/2014</date>				<h1 class="entry-title">BeeFree: A free, online email editor with built-in responsive design</h1>
+                </header>
+                <div class="entry-content">
+                    <p>We&#8217;re excited to introduce <strong>BeeFree</strong>, a <a title="Check out BeeFree: A free, online email editor with responsive design by MailUp" href="https://beefree.io/?utm_source=mailup-blog&amp;utm_medium=blog-post&amp;utm_content=top-link&amp;utm_campaign=BeeFree1014" target="_blank">free online email editor</a> that allows you to design stunning, fully responsive emails without the need of any HTML or CSS coding knowledge, and therefore, greatly improving your productivity in the email design creation process. As you&#8217;ll notice, BeeFree is the free online version of our drag and drop email editor found in the MailUp emailing platform.</p>
+                    <figure><a href="https://beefree.io/?utm_source=mailup-blog&amp;utm_medium=blog-post&amp;utm_content=screenshots&amp;utm_campaign=BeeFree1014" target="_blank"><img class="aligncenter wp-image-1854" src="http://blog.mailup.com/wp-content/uploads/beefree_editor_drag_and_drop.png" alt="Building a responsive email inside the BEE email editor" width="600" height="502" /></a></figure>
+                    <h2>Key BeeFree Features</h2>
+                    <h3>2015 Update: Embed the BEE Email Editor Software and BEE v. 2</h3>
+                    <p>Check out the new version &#8211; BEE v. 2 &#8211; of our BEE email editor on<span class="Apple-converted-space"> </span><a href="https://beefree.io/?utm_source=mailup-blog&amp;utm_medium=blog-post&amp;utm_campaign=BeeFree1014" target="_blank">https://beefree.io</a>, the website that hundreds of thousands of email designers have used in the last months to create beautiful, responsive emails! Due to popular demand, for all you software developers, you can now embed the BEE email editor software into your own software application through the<span class="Apple-converted-space"> </span><em>BEE Plugin </em>(<a href="http://blog.mailup.com/2015/05/embeddable-email-editor-plugin-bee-v2/?utm_source=mailup-blog&amp;utm_medium=blog-post&amp;utm_campaign=BeeFree1014" target="_blank">learn more</a>).</p>
+                    <h3>Advanced Responsive Email Design</h3>
+                    <p>Design rich, branded emails without the need of HTML or CSS coding know-how. The BeeFree editor automatically applies smart CSS media queries to the email you are working on, optimized for multi-screen views, and especially optimized for mobile.</p>
+                    <h3>Rich and Basic Email Templates Available</h3>
+                    <p>Choose from four types of templates and wireframes: promotional, e-commerce, newsletter, and simple. Each email template utilizes responsive email design.</p>
+                    <figure><a href="https://beefree.io/?utm_source=mailup-blog&amp;utm_medium=blog-post&amp;utm_content=screenshots&amp;utm_campaign=BeeFree1014" target="_blank"><img class="aligncenter wp-image-1855" src="http://blog.mailup.com/wp-content/uploads/beefree_editor_template_selection.png" alt="Responsive email templates in the BEE email editor" width="600" height="502" /></a></figure>
+                    <h3>An Intuitive Drag and Drop Email Builder</h3>
+                    <p>Build your email by easily adding and moving (i.e. dragging and dropping) blocks of text, image, buttons, social sharing links, and mixed blocks.</p>
+                    <h3>Instant Email Preview on Desktop and Mobile</h3>
+                    <p>Preview the working email message in real-time and check how it renders on desktop and mobile screens.</p>
+                    <figure><a href="https://beefree.io/?utm_source=mailup-blog&amp;utm_medium=blog-post&amp;utm_content=screenshots&amp;utm_campaign=BeeFree1014" target="_blank"><img class="aligncenter wp-image-1856" src="http://blog.mailup.com/wp-content/uploads/beefree_editor_preview_window_responsive.png" alt="Mobile email preview in the BEE email editor" width="600" height="503" /></a></figure>
+                    <h3>Easy Export of Your Email</h3>
+                    <p>Save the email and export it as a zip file. The zip file contains the HTML version of the email and an image folder. The zip file can then be imported into your favorite email marketing platform.</p>
+                    <h3>Available in 3 Languages</h3>
+                    <p>Choose English, Spanish, or Italian as your preferred language when using the editor.</p>
+                    <h3>Online, Accessible to Anyone, and Free!</h3>
+                    <p>BeeFree is intended for anyone to use. No sign up of any kind is required.</p>
+                    <h2>Striving to build the <em>Best Email Editor </em>(BEE)</h2>
+                    <p>BeeFree is an online tool open for the email community to use and intended to advance and innovate what a drag-and-drop email editor can do today.</p>
+                    <blockquote><p>“The Bee in BeeFree stands for Best Email Editor: that’s a very ambitious goal that we have given ourselves,” says <strong>Massimo Arrigoni</strong>, Chief Product Officer at MailUp. “We decided that taking the email editor out of MailUp and making it a stand-alone product that anyone can use was the right strategy to get there. It will allow us to collect feedback and push development forward, while also giving the email community a cool tool that will help marketers design nice email messages with little effort.”</p></blockquote>
+                    <h3>Your feedback is welcome!</h3>
+                    <p>Check out the BeeFree email editor at <a href="https://beefree.io/?utm_source=mailup-blog&amp;utm_medium=blog-post&amp;utm_campaign=BeeFree1014" target="_blank">https://beefree.io/</a> to see how easy it is to design stunning emails! And, let us know if you have any questions and ideas on the BeeFree forum: <a href="http://help.beefree.io/" target="_blank">http://help.beefree.io/</a></p>
+                    <h4>Additional Resources</h4>
+                    <ul>
+                        <li>New! <a href="http://blog.mailup.com/2015/05/embeddable-email-editor-plugin-bee-v2/?utm_source=mailup-blog&amp;utm_medium=blog-post&amp;utm_campaign=BeeFree1014" target="_blank">BEE Update: A new, embeddable email editor is here!</a></li>
+                        <li>New! Check out the <a href="http://emaildesign.beefree.io/" target="_blank">email design tutorials</a> on our new <a href="http://emaildesign.beefree.io/" target="_blank">email design workshop shop</a>!</li>
+                    </ul>
+                    <h4>Other notes</h4>
+                    <p>Please note that BeeFree should be used as an email editor/builder and is not intended to be used as an email sending platform. You can only send to a maximum of 5 email addresses for your testing purposes. Furthermore, sending unsolicited emails is of course not permitted. At MailUp, we take email spam very seriously.</p>
+                </div>
+                <footer>
+                    <div style="min-height:33px;" class="really_simple_share really_simple_share_button robots-nocontent snap_nopreview"><div class="really_simple_share_facebook_like" style="width:130px;"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.mailup.com%2F2014%2F10%2Ffree-online-email-editor-html-responsive-design-beefree-mailup%2F&amp;layout=button_count&amp;width=130&amp;height=27&amp;locale=en_US&amp;action=recommend&amp;appId=636541873040855"
+                                                                                                                                                                                                                     scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:27px;" allowTransparency="true"></iframe></div><div class="really_simple_share_twitter" style="width:100px;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"  data-text="BeeFree: A free, online email editor with built-in responsive design" data-url="http://blog.mailup.com/2014/10/free-online-email-editor-html-responsive-design-beefree-mailup/"  data-via="MailUp_US"   ></a></div><div class="really_simple_share_google1" style="width:80px;"><div class="g-plusone" data-size="medium" data-href="http://blog.mailup.com/2014/10/free-online-email-editor-html-responsive-design-beefree-mailup/" ></div></div><div class="really_simple_share_linkedin" style="width:130px;"><script type="IN/Share" data-counter="right" data-url="http://blog.mailup.com/2014/10/free-online-email-editor-html-responsive-design-beefree-mailup/"></script></div><div class="really_simple_share_readygraph_infolinks" style="width:110px;"></div></div>
+                    <div class="really_simple_share_clearfix"></div>											</footer>
+            </article>
+            <div class="entry-author panel">
+                <div class="row">
+                    <div class="large-3 columns">
+                        <img alt='' src='http://0.gravatar.com/avatar/318fc3b2eb3c0b84e1acbdd610bf9062?s=95&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/318fc3b2eb3c0b84e1acbdd610bf9062?s=190&amp;d=mm&amp;r=g 2x' class='avatar avatar-95 photo' height='95' width='95' />				</div>
+                    <div class="large-9 columns">
+                        <h4><a href="http://blog.mailup.com/author/sergio-mandrone/" title="Posts by Sergio Mandrone" rel="author">Sergio Mandrone</a></h4>
+                        <p class="cover-description"></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    jQuery("#form_textarea_box").validationEngine({promptPosition : "topLeft", scroll: false});
+                });
+            </script>
+
+            <div id="box-update-mailup">
+                <form id="form_textarea_box" target="_blank" method="post" action="http://updates.mailup.com/frontend/subscribe.aspx" name="formSubscribeBox">
+                    <h2>Did you enjoy this article? Sign up to get blog updates.</h2>
+                    <div class="container-form-newsletter">
+                        <input type="hidden" name="list" value="90" />
+                        <input type="hidden" name="group" value="" />
+                        <input type="hidden" name="campo26" value="1" />
+                        <input name="email" type="text" maxlength="100" size="21" class="inputemailBox required email validate[required,custom[email]]" value="" onfocus="if (this.value == 'Enter your email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter your email'}" placeholder="Enter your email" />
+                        <p>
+                            <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1139">Email marketing&nbsp;&nbsp;
+                            <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1138">SMS marketing&nbsp;&nbsp;
+                            <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1137">Legal &amp; Privacy&nbsp;&nbsp;
+                            <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1136">Deliverability&nbsp;&nbsp;
+                            <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1135">Product&nbsp;&nbsp;
+                            <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1134">Company news<br>
+                            <input type="checkbox" name="privacy" class="check-privacy validate[required]">I agree to the <a href="http://www.mailup.com/privacy-policy.htm" target="_blank">MailUp Privacy Policy</a>
+                        </p>
+                        <input type="submit"  name="submitNL" value="Get blog updates" class="bluebutton" onClick="checkGroup('form_textarea_box')"/>
+                    </div>
+                </form>
+            </div>
+            <div id="disqus_thread">
+                <div id="dsq-content">
+
+
+                    <ul id="dsq-comments">
+                        <li class="post pingback">
+                            <p>Pingback: <a href='http://blog.mailup.es/2015/08/un-ano-en-bolsa-doce-meses-de-exitos/' rel='external nofollow' class='url'>MailUp: un año en Bolsa, doce meses de éxitos | Blog MailUp</a>()</p>
+                        </li>
+                        </li><!-- #comment-## -->
+                        <li class="comment even thread-even depth-1" id="dsq-comment-792">
+                            <div id="dsq-comment-header-792" class="dsq-comment-header">
+                                <cite id="dsq-cite-792">
+                                    <span id="dsq-author-user-792">Srđan Mahmutović</span>
+                                </cite>
+                            </div>
+                            <div id="dsq-comment-body-792" class="dsq-comment-body">
+                                <div id="dsq-comment-message-792" class="dsq-comment-message"><p>so how much does this cost? i found a reference &#8220;free up to x users&#8221;.. but what are the exact numbers we&#8217;re talking about here?</p>
+                                </div>
+                            </div>
+
+                            <ul class="children">
+                                <li class="comment odd alt depth-2" id="dsq-comment-795">
+                                    <div id="dsq-comment-header-795" class="dsq-comment-header">
+                                        <cite id="dsq-cite-795">
+                                            <span id="dsq-author-user-795">mailupinc</span>
+                                        </cite>
+                                    </div>
+                                    <div id="dsq-comment-body-795" class="dsq-comment-body">
+                                        <div id="dsq-comment-message-795" class="dsq-comment-message"><p>Here is pricing on the plugin: <a href="http://help.beefree.io/hc/en-us/articles/203054451-How-much-is-BEE-Plugin-" rel="nofollow">http://help.beefree.io/hc/en-us/articles/203054451-How-much-is-BEE-Plugin-</a></p>
+                                        </div>
+                                    </div>
+
+                                </li><!-- #comment-## -->
+                            </ul><!-- .children -->
+                        </li><!-- #comment-## -->
+                        <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-793">
+                            <div id="dsq-comment-header-793" class="dsq-comment-header">
+                                <cite id="dsq-cite-793">
+                                    <span id="dsq-author-user-793">Srđan Mahmutović</span>
+                                </cite>
+                            </div>
+                            <div id="dsq-comment-body-793" class="dsq-comment-body">
+                                <div id="dsq-comment-message-793" class="dsq-comment-message"><p>btw.. my intended purpose is to integrate in our existing app</p>
+                                </div>
+                            </div>
+
+                            <ul class="children">
+                                <li class="comment odd alt depth-2" id="dsq-comment-794">
+                                    <div id="dsq-comment-header-794" class="dsq-comment-header">
+                                        <cite id="dsq-cite-794">
+                                            <span id="dsq-author-user-794">mailupinc</span>
+                                        </cite>
+                                    </div>
+                                    <div id="dsq-comment-body-794" class="dsq-comment-body">
+                                        <div id="dsq-comment-message-794" class="dsq-comment-message"><p>Yes, you can embed BEE into your app using its plugin. Learn more at: <a href="http://help.beefree.io/hc/en-us/articles/203054441-What-is-BEE-Plugin-" rel="nofollow">http://help.beefree.io/hc/en-us/articles/203054441-What-is-BEE-Plugin-</a></p>
+                                        </div>
+                                    </div>
+
+                                </li><!-- #comment-## -->
+                            </ul><!-- .children -->
+                        </li><!-- #comment-## -->
+                        <li class="comment even thread-even depth-1" id="dsq-comment-800">
+                            <div id="dsq-comment-header-800" class="dsq-comment-header">
+                                <cite id="dsq-cite-800">
+                                    <span id="dsq-author-user-800">Greg</span>
+                                </cite>
+                            </div>
+                            <div id="dsq-comment-body-800" class="dsq-comment-body">
+                                <div id="dsq-comment-message-800" class="dsq-comment-message"><p>Is there any concept of saving a base template that can be re-imported by the same user or a different user?</p>
+                                </div>
+                            </div>
+
+                            <ul class="children">
+                                <li class="comment odd alt depth-2" id="dsq-comment-801">
+                                    <div id="dsq-comment-header-801" class="dsq-comment-header">
+                                        <cite id="dsq-cite-801">
+                                            <span id="dsq-author-user-801">mailupinc</span>
+                                        </cite>
+                                    </div>
+                                    <div id="dsq-comment-body-801" class="dsq-comment-body">
+                                        <div id="dsq-comment-message-801" class="dsq-comment-message"><p>Hi Greg, you can certainly do that by using BEE Plugin. The save functions gives you the file to save, and it&#8217;s up to you to decide what to do with it. So you can save a &#8220;Save as template&#8221; button in your UI that would trigger the plugin to give you the JSON and HTML to save. You can then use the JSON file to reload that template into the plugin. For details on BEE Plugin please see: <a href="http://help.beefree.io/hc/en-us/categories/200522392-BEE-Plugin" rel="nofollow">http://help.beefree.io/hc/en-us/categories/200522392-BEE-Plugin</a>.</p>
+                                        </div>
+                                    </div>
+
+                                </li><!-- #comment-## -->
+                            </ul><!-- .children -->
+                        </li><!-- #comment-## -->
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+            <script type="text/javascript">
+                var disqus_url = 'http://blog.mailup.com/2014/10/free-online-email-editor-html-responsive-design-beefree-mailup/';
+                var disqus_identifier = '1846 http://blog.mailup.com/?p=1846';
+                var disqus_container_id = 'disqus_thread';
+                var disqus_shortname = 'mailupblogusa';
+                var disqus_title = "BeeFree: A free, online email editor with built-in responsive design";
+                var disqus_config_custom = window.disqus_config;
+                var disqus_config = function () {
+                    /*
+                     All currently supported events:
+                     onReady: fires when everything is ready,
+                     onNewComment: fires when a new comment is posted,
+                     onIdentify: fires when user is authenticated
+                     */
+
+
+                    this.language = '';
+                    this.callbacks.onReady.push(function () {
+
+                        // sync comments in the background so we don't block the page
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = '?cf_action=sync_comments&post_id=1846';
+
+                        var firstScript = document.getElementsByTagName('script')[0];
+                        firstScript.parentNode.insertBefore(script, firstScript);
+                    });
+
+                    if (disqus_config_custom) {
+                        disqus_config_custom.call(this);
+                    }
+                };
+
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+
+
+        </div>
+        <aside id="sidebar" class="small-12 large-4 columns show-for-large-up">
+            <article id="wpsocialmailup-2" class="panel widget widget_wpsocialmailup"><div class="social-mailup-widget"><ul class="social-mailup"><li class="facebook"><a target="_blank" href="https://www.facebook.com/mailupinc">Facebook</a></li><li class="twitter"><a target="_blank" href="https://twitter.com/mailup_us">Twitter</a></li><li class="rss"><a target="_blank" href="http://blog.mailup.com/feed/">RSS</a></li><li class="gplus"><a target="_blank" href="https://plus.google.com/u/0/+MailupInc">Google+</a></li></ul></ul></div></article><article id="text-3" class="panel widget widget_text"><h4>Get updates from our blog</h4>			<div class="textwidget"><div id="iscrizionenewsletter">
+            <!--  http://e.mailup.com/frontend/subscribe.aspx -->
+            <form id="form-subscribe" method="post" action="http://updates.mailup.com/frontend/subscribe.aspx" name="formSubscribe">
+                <input type="hidden" name="list" value="90" />
+                <input type="hidden" name="group" value="" />
+                <input type="hidden" name="campo26" value="1" />
+                <input name="email" type="text" maxlength="100" size="21" class="inputemail required email validate[required,custom[email]]" value="" onfocus="if (this.value == 'email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'email'}" placeholder="email" />
+                <!-- category checkbox -->
+                <p style="width:100%; clear:both; margin-bottom:10px;">
+                </p>
+                <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1139"> Email marketing<br>
+                <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1138"> SMS marketing<br>
+                <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1137"> Legal &amp; Privacy<br>
+                <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1136"> Deliverability<br>
+                <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1135"> Product<br>
+                <input type="checkbox" name="groupTmp" class="check-privacy checkbox" value="1134"> Company news
+                </p>
+                <!-- /category checkbox -->
+                <p class="wrapper-privacy">
+                    <span><input type="checkbox" name="privacy" class="check-privacy required validate[required] checkbox"></span>
+                    I agree to the <a href="http://www.mailup.com/privacy-policy/mailup-inc/" target="_blank">MailUp privacy policy</a>
+                </p>
+                <input type="submit" value="SIGN UP" class="orangebutton submit" onClick="checkGroup('form-subscribe')"/>
+            </form>
+        </div>
+        </div>
+        </article><article id="search-3" class="panel widget widget_search"><h4>Search</h4><form role="search" method="get" id="searchform" action="http://blog.mailup.com/">
+            <div class="row collapse">
+                <div class="large-7 small-9 columns">
+                    <input type="text" value="" name="s" id="s" placeholder="Keyword">
+                </div>
+                <div class="large-4 small-3 columns">
+                    <input type="submit" id="searchsubmit" value="Search" class="button postfix">
+                </div>
+            </div>
+        </form></article><article id="recent-comments-3" class="panel widget widget_recent_comments"><h4>Last comment</h4><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='https://www.linkedin.com/in/massimoarrigoni' rel='external nofollow' class='url'>Massimo Arrigoni</a></span> on <a href="http://blog.mailup.com/2014/02/triggered-messages-weekends-holidays/#comment-813">Triggered messages: not on holidays and weekends</a></li><li class="recentcomments"><span class="comment-author-link">microobserver</span> on <a href="http://blog.mailup.com/2014/02/triggered-messages-weekends-holidays/#comment-812">Triggered messages: not on holidays and weekends</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.edenweb.ie/' rel='external nofollow' class='url'>Peter Knight</a></span> on <a href="http://blog.mailup.com/2013/11/increasing-opens-with-the-preheader-an-update/#comment-811">Increasing opens with the preheader: an update</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.mailup.com' rel='external nofollow' class='url'>MailUp</a></span> on <a href="http://blog.mailup.com/2014/06/marketers-practical-guide-to-canadas-anti-spam-legislation-casl/#comment-808">A marketer&#8217;s practical guide to Canada&#8217;s Anti-Spam Legislation (CASL)</a></li><li class="recentcomments"><span class="comment-author-link">AnDi</span> on <a href="http://blog.mailup.com/2014/06/marketers-practical-guide-to-canadas-anti-spam-legislation-casl/#comment-807">A marketer&#8217;s practical guide to Canada&#8217;s Anti-Spam Legislation (CASL)</a></li></ul></article><article id="categories-3" class="panel widget widget_categories"><h4>Categories</h4>		<ul>
+            <li class="cat-item cat-item-45"><a href="http://blog.mailup.com/category/company-news/" title="Old category which includes also Team. 20160202">Company news</a>
+            </li>
+            <li class="cat-item cat-item-64"><a href="http://blog.mailup.com/category/deliverability-2/" title="Old category 20160202.">Deliverability</a>
+            </li>
+            <li class="cat-item cat-item-61"><a href="http://blog.mailup.com/category/email-marketing/" title="Old category which includes Ebook, Eventi, NL. 20160202">Email Marketing</a>
+            </li>
+            <li class="cat-item cat-item-103"><a href="http://blog.mailup.com/category/legal-and-privacy/" title="New category which includes Privacy. 20160202">Legal &amp; Privacy</a>
+            </li>
+            <li class="cat-item cat-item-101"><a href="http://blog.mailup.com/category/product/" title="New category which includes Advanced Stuff, Drupal, Magento, WordPress. 20160202">Product</a>
+            </li>
+        </ul>
+        </article><article id="rounded-tag-cloud" class="panel widget rounded_tag_cloud_widget"><h4>Tag Cloud</h4><div class="rtc-div tagcloud"><a href='http://blog.mailup.com/tag/ecommerce-integrations/' class='tag-link-16' title='6 topics' style='font-size: 12pt;'>"ecommerce integrations"</a>
+            <a href='http://blog.mailup.com/tag/email-list/' class='tag-link-21' title='4 topics' style='font-size: 12pt;'>"email list"</a>
+            <a href='http://blog.mailup.com/tag/grow-mailing-list/' class='tag-link-20' title='2 topics' style='font-size: 12pt;'>"Grow mailing list"</a>
+            <a href='http://blog.mailup.com/tag/media-query/' class='tag-link-12' title='1 topic' style='font-size: 12pt;'>@media query</a>
+            <a href='http://blog.mailup.com/tag/ab-testing/' class='tag-link-30' title='2 topics' style='font-size: 12pt;'>ab testing</a>
+            <a href='http://blog.mailup.com/tag/advanced-stuff/' class='tag-link-104' title='27 topics' style='font-size: 12pt;'>Advanced Stuff</a>
+            <a href='http://blog.mailup.com/tag/bee/' class='tag-link-97' title='2 topics' style='font-size: 12pt;'>BEE</a>
+            <a href='http://blog.mailup.com/tag/beefree/' class='tag-link-74' title='2 topics' style='font-size: 12pt;'>BeeFree</a>
+            <a href='http://blog.mailup.com/tag/casl/' class='tag-link-60' title='2 topics' style='font-size: 12pt;'>CASL</a>
+            <a href='http://blog.mailup.com/tag/company-news/' class='tag-link-105' title='31 topics' style='font-size: 12pt;'>Company News</a>
+            <a href='http://blog.mailup.com/tag/deliverability/' class='tag-link-37' title='10 topics' style='font-size: 12pt;'>deliverability</a>
+            <a href='http://blog.mailup.com/tag/dmarc/' class='tag-link-57' title='3 topics' style='font-size: 12pt;'>dmarc</a>
+            <a href='http://blog.mailup.com/tag/drupal/' class='tag-link-106' title='4 topics' style='font-size: 12pt;'>Drupal</a>
+            <a href='http://blog.mailup.com/tag/email-api/' class='tag-link-46' title='3 topics' style='font-size: 12pt;'>email api</a>
+            <a href='http://blog.mailup.com/tag/email-automation/' class='tag-link-54' title='5 topics' style='font-size: 12pt;'>email automation</a>
+            <a href='http://blog.mailup.com/tag/email-editor/' class='tag-link-99' title='2 topics' style='font-size: 12pt;'>email editor</a>
+            <a href='http://blog.mailup.com/tag/email-editor-software/' class='tag-link-93' title='2 topics' style='font-size: 12pt;'>email editor software</a>
+            <a href='http://blog.mailup.com/tag/emailing-frequency/' class='tag-link-38' title='2 topics' style='font-size: 12pt;'>emailing frequency</a>
+            <a href='http://blog.mailup.com/tag/email-marketing-api/' class='tag-link-47' title='3 topics' style='font-size: 12pt;'>email marketing api</a>
+            <a href='http://blog.mailup.com/tag/email-marketing-cost/' class='tag-link-10' title='5 topics' style='font-size: 12pt;'>email marketing cost</a>
+            <a href='http://blog.mailup.com/tag/email-marketing-integrations/' class='tag-link-107' title='14 topics' style='font-size: 12pt;'>Email marketing integrations</a>
+            <a href='http://blog.mailup.com/tag/email-on-mobile-devices/' class='tag-link-13' title='10 topics' style='font-size: 12pt;'>email on mobile devices</a>
+            <a href='http://blog.mailup.com/tag/email-preferences/' class='tag-link-40' title='3 topics' style='font-size: 12pt;'>email preferences</a>
+            <a href='http://blog.mailup.com/tag/email-statistics/' class='tag-link-51' title='2 topics' style='font-size: 12pt;'>email statistics</a>
+            <a href='http://blog.mailup.com/tag/facebook/' class='tag-link-22' title='1 topic' style='font-size: 12pt;'>facebook</a>
+            <a href='http://blog.mailup.com/tag/gmail/' class='tag-link-33' title='4 topics' style='font-size: 12pt;'>gmail</a>
+            <a href='http://blog.mailup.com/tag/gmail-open-rates/' class='tag-link-41' title='4 topics' style='font-size: 12pt;'>gmail open rates</a>
+            <a href='http://blog.mailup.com/tag/email-list-building/' class='tag-link-19' title='7 topics' style='font-size: 12pt;'>list building</a>
+            <a href='http://blog.mailup.com/tag/magento-email-marketing-extension/' class='tag-link-18' title='5 topics' style='font-size: 12pt;'>magento</a>
+            <a href='http://blog.mailup.com/tag/mailup/' class='tag-link-67' title='68 topics' style='font-size: 12pt;'>MailUp</a>
+            <a href='http://blog.mailup.com/tag/mailup-pricing/' class='tag-link-8' title='1 topic' style='font-size: 12pt;'>mailup pricing</a>
+            <a href='http://blog.mailup.com/tag/message-statistics/' class='tag-link-26' title='1 topic' style='font-size: 12pt;'>message statistics</a>
+            <a href='http://blog.mailup.com/tag/mobile-email/' class='tag-link-11' title='9 topics' style='font-size: 12pt;'>mobile email</a>
+            <a href='http://blog.mailup.com/tag/mobile-optimized-email/' class='tag-link-14' title='10 topics' style='font-size: 12pt;'>mobile optimized email</a>
+            <a href='http://blog.mailup.com/tag/open-rate/' class='tag-link-50' title='2 topics' style='font-size: 12pt;'>open rate</a>
+            <a href='http://blog.mailup.com/tag/optimization/' class='tag-link-31' title='2 topics' style='font-size: 12pt;'>optimization</a>
+            <a href='http://blog.mailup.com/tag/pay-per-speed/' class='tag-link-9' title='1 topic' style='font-size: 12pt;'>pay-per-speed</a>
+            <a href='http://blog.mailup.com/tag/preheader-text/' class='tag-link-92' title='3 topics' style='font-size: 12pt;'>preheader text</a>
+            <a href='http://blog.mailup.com/tag/responsive-html-email-editor/' class='tag-link-59' title='2 topics' style='font-size: 12pt;'>responsive html email editor</a>
+            <a href='http://blog.mailup.com/tag/shopify-email-marketing-app/' class='tag-link-17' title='2 topics' style='font-size: 12pt;'>shopify</a>
+            <a href='http://blog.mailup.com/tag/tabbed-layout/' class='tag-link-34' title='2 topics' style='font-size: 12pt;'>tabbed layout</a>
+            <a href='http://blog.mailup.com/tag/triggered-messages/' class='tag-link-4' title='3 topics' style='font-size: 12pt;'>Triggered Messages</a>
+            <a href='http://blog.mailup.com/tag/video-in-email/' class='tag-link-27' title='1 topic' style='font-size: 12pt;'>video in email</a>
+            <a href='http://blog.mailup.com/tag/wordpress/' class='tag-link-108' title='3 topics' style='font-size: 12pt;'>WordPress</a>
+            <a href='http://blog.mailup.com/tag/zapier/' class='tag-link-42' title='3 topics' style='font-size: 12pt;'>zapier</a></div></article></aside><!-- /#sidebar -->
+    </div><!-- Row End -->
+
+
+
+</div><!-- Container End -->
+
+
+
+
+
+
+
+<section class="bkg07">
+
+
+
+    <div class="cta_content">
+
+
+
+        <h2>Try unlimited mailing for yourself!</h2>
+
+
+
+        <p>Request your free MailUp trial now and discover how to maximize the impact of your campaigns.</p>
+
+
+
+        <div class="CTA"><a class="rounded" href="http://lp.mailup.com/en/free-trial/" target="_blank">Try it now</a></div>
+
+
+
+    </div>
+
+
+
+</section>
+
+<footer>
+    <section class="wrapper_footer_copy">
+        <div class="row footer-copy">
+            <ul class="footer-cities">
+                <li>Milano</li>
+                <li>Cremona</li>
+                <li>San Francisco</li>
+                <li>Tokyo</li>
+                <li>Jakarta</li>
+                <li>Buenos Aires</li>
+            </ul>
+            <div class="menu-legal-menu-container"><ul id="menu-legal-menu" class="menu"><li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a href="http://www.mailup.com/mailup-terms-and-conditions/">Terms and conditions</a></li><li id="menu-item-1117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1117"><a href="http://www.mailup.com/anti-spam-policy/">Anti-spam policy</a></li><li id="menu-item-247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a href="http://www.mailup.com/privacy-policy/mailup-inc/">Privacy</a></li><li id="menu-item-245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-245"><a href="http://www.mailup.com/cookies-policy/">Cookies policy</a></li></ul></div>
+            <div class="footer-address"><span>|</span>MailUp<sup>&reg;</sup> is a trademark by <a href="about-us/#mailup">MailUp S.p.A.</a>, VAT code no. IT01279550196. All rights reserved. </div>
+        </div>
+    </section>
+</footer>
+
+<script type="text/javascript">
+    // <![CDATA[
+    var disqus_shortname = 'mailupblogusa';
+    (function () {
+        var nodes = document.getElementsByTagName('span');
+        for (var i = 0, url; i < nodes.length; i++) {
+            if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                url = nodes[i].parentNode.href.split('#', 1);
+                if (url.length == 1) { url = url[0]; }
+                else { url = url[1]; }
+                nodes[i].parentNode.href = url + '#disqus_thread';
+            }
+        }
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    // ]]>
+</script>
+<script type='text/javascript' src='http://blog.mailup.com/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='http://blog.mailup.com/wp-content/themes/reverie-master/js/foundation.min.js'></script>
+
+
+
+
+
+
+
+<script>
+
+
+
+    (function($) {
+
+
+
+        $(document).foundation();
+
+
+
+    })(jQuery);
+
+
+
+</script>
+
+</body>
+</html>
