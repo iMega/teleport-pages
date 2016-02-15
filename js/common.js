@@ -8,6 +8,7 @@ teleportApp.config(function($routeProvider, $locationProvider) {
 
 teleportApp.controller('signupCtrl', ['$http', '$location', function ($http, $location) {
     this.sendInvite = function () {
+        this.invite = true;
         $http.get('http://a.imega.club/activate/invite/' + this.email);
     };
 
