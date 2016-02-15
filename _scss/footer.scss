@@ -1,7 +1,12 @@
 .it-footer {
+    .fa {
+        font-size: 2.6rem;
+        color: #FF7F51;
+    }
     .footer-t-piece {
         background-color: #323341;
         padding-top: 13px;
+        font-weight: 300;
         .logo-piece-top {
             width: 144px;
         }
@@ -9,11 +14,18 @@
             color: #FE7F2D;
         }
         a:hover {
+
             color: #FF9B54;
         }
         a:visited {
             color: #FF7F51;
         }
+    }
+    &__soc-icons .menu{
+        margin: 1rem;
+        border-width: 1px 0;
+        border-color: rgba(255, 255, 255, 0.4);
+        border-style: solid;
     }
     .footer-b-piece {
         background-color: #61626F;

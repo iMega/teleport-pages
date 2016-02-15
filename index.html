@@ -7,7 +7,8 @@ title: Взаимосвязь интернет-магазина и 1С
         <section class="small-12 medium-6 large-6 columns">
             <p class="msg1">Вы используете приложение 1С или МойСклад и хотите представить товар в сети интернет?</p>
             <p class="msg2">Легко!</p>
-            <p class="msg3">iMegaTeleport обеспечивает взаимосвязь интернет-магазина и приложения управляющего торговлей.</p>
+            <p class="msg3">iMegaTeleport обеспечивает взаимосвязь интернет-магазина и приложения управляющего
+                торговлей.</p>
         </section>
         <section class="small-12 medium-6 large-6 columns signup">
             222
@@ -20,30 +21,48 @@ title: Взаимосвязь интернет-магазина и 1С
             <div class="row">
                 <div class="small-12 medium-6 large-4 columns" style="border: 1px solid black">
                     <h3>Как это работает?</h3>
-                    iMegaTeleport обеспечивает взаимосвязь интернет-магазина (Woocommerce, Viper Fabthemes) и приложения управления торговлей 1С через базовый модуль «обмен 1С и сайта», встроенного в конфигурациях 1С: Управление торговлей, Торговля и склад, Управление производственным предприятием, а также в некоторых других продуктах 1С или МойСклад.
+                    <p>iMegaTeleport обеспечивает взаимосвязь интернет-магазина (Woocommerce, Viper Fabthemes) и
+                        приложения управления торговлей 1С через базовый модуль «обмен 1С и сайта», встроенного в
+                        конфигурациях 1С: Управление торговлей, Торговля и склад, Управление производственным
+                        предприятием, а также в некоторых других продуктах 1С или МойСклад.</p>
                 </div>
                 <div class="small-12 medium-6 large-4 columns" style="border: 1px solid black">
                     <h3>Какие данные?</h3>
-                    iMegaTeleport выгружает данные о товаре: название, цена, свойства и характеристики товара, описание и изображение, доступный остаток товара, а также структуру каталога товаров (группы номенклатуры).
+                    <p>
+                        iMegaTeleport выгружает данные о товаре: название, цена, свойства и характеристики товара,
+                        описание
+                        и изображение, доступный остаток товара, а также структуру каталога товаров (группы
+                        номенклатуры).
+                    </p>
                     <article class="show-for-medium-only">
                         <h3>Ограничения есть?</h3>
-                        Количество товаров, которое можно выгрузить ограничено возможностями сервера, на котором работает программа 1С.
+                        <p>
+                            Количество товаров, которое можно выгрузить ограничено возможностями сервера, на котором
+                            работает программа 1С.
+                        </p>
                     </article>
                 </div>
                 <div class="small-12 large-4 columns hide-for-medium-only" style="border: 1px solid black">
                     <h3>Ограничения есть?</h3>
-                    Количество товаров, которое можно выгрузить ограничено возможностями сервера, на котором работает программа 1С.
+                    <p>
+                        Количество товаров, которое можно выгрузить ограничено возможностями сервера, на котором
+                        работает
+                        программа 1С.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <article data-ng-controller="signupCtrl as signup">
-    <header data-ng-init="signup.activate()"><div class="row"><h3>Начать использовать</h3></div></header>
+    <header data-ng-init="signup.activate()">
+        <div class="row"><h3>Начать использовать</h3></div>
+    </header>
     <section>
         <div class="row" data-ng-if="!signup.invite">
             <input type="text" data-ng-model="signup.email">
-            <button type="button" class="button ng-cloak" data-ng-click="signup.sendInvite()">Получить приглашение</button>
+            <button type="button" class="button ng-cloak" data-ng-click="signup.sendInvite()">Получить приглашение
+            </button>
         </div>
         <div class="row" data-ng-if="signup.invite">
             Приглашение отправлено на {| signup.email |}

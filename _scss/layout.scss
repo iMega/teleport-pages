@@ -1,10 +1,19 @@
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Sans'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v5/T3abUOg4YgfjOby2l-QudpBw1xU1rKptJj_0jans920.woff2) format('woff2');
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,700,100');
+
 * {
     font-size: 1.2rem;
     color: #222;
+}
+
+body, h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+}
+
+h3 {
+    font-weight: 300;
+}
+h1 {
+    font-weight: 200;
 }
