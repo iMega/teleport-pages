@@ -2,32 +2,49 @@
 layout: default
 title: Взаимосвязь интернет-магазина и 1С
 ---
-<article class="it-poster">
+<article class="it-poster" data-ng-controller="signupCtrl as signup">
     <div class="row">
         <section class="small-12 medium-6 large-6 columns">
             <p class="msg1">Вы используете приложение 1С или МойСклад и хотите представить товар в сети интернет?</p>
+
             <p class="msg2">Легко!</p>
+
             <p class="msg3">iMegaTeleport обеспечивает взаимосвязь интернет-магазина и приложения управляющего
                 торговлей.</p>
         </section>
         <section class="small-12 medium-6 large-6 columns signup">
-            222
+            <div class="small-offset-1 large-offset-3 small-10 large-7">
+                <div data-ng-init="signup.activate()">
+                    <div class="row"><h3>Начать использовать</h3></div>
+                </div>
+                <div class="row" data-ng-if="!signup.invite">
+                    <input type="text" class="large" data-ng-model="signup.email">
+                    <button type="button"
+                            class="button ng-cloak"
+                            data-ng-click="signup.sendInvite()">Получить приглашение</button>
+                </div>
+                <div class="row" data-ng-if="signup.invite">
+                    Приглашение отправлено на {| signup.email |}
+                </div>
+            </div>
         </section>
     </div>
 </article>
 <div class="container" role="document">
     <div class="row">
-        <div class="small-12 medium-12 large-12 columns" id="content" role="main" style="border: 1px solid black">
-            <div class="row">
-                <div class="small-12 medium-6 large-4 columns" style="border: 1px solid black">
-                    <h3>Как это работает?</h3>
+        <div class="columns" id="content" role="main">
+            <div class="row container__text-gray">
+                <div class="small-12 medium-6 large-4 columns">
+                    <h3 class="title">Как это работает?</h3>
+
                     <p>iMegaTeleport обеспечивает взаимосвязь интернет-магазина (Woocommerce, Viper Fabthemes) и
                         приложения управления торговлей 1С через базовый модуль «обмен 1С и сайта», встроенного в
                         конфигурациях 1С: Управление торговлей, Торговля и склад, Управление производственным
                         предприятием, а также в некоторых других продуктах 1С или МойСклад.</p>
                 </div>
-                <div class="small-12 medium-6 large-4 columns" style="border: 1px solid black">
-                    <h3>Какие данные?</h3>
+                <div class="small-12 medium-6 large-4 columns">
+                    <h3 class="title">Какие данные?</h3>
+
                     <p>
                         iMegaTeleport выгружает данные о товаре: название, цена, свойства и характеристики товара,
                         описание
@@ -35,15 +52,17 @@ title: Взаимосвязь интернет-магазина и 1С
                         номенклатуры).
                     </p>
                     <article class="show-for-medium-only">
-                        <h3>Ограничения есть?</h3>
+                        <h3 class="title">Ограничения есть?</h3>
+
                         <p>
                             Количество товаров, которое можно выгрузить ограничено возможностями сервера, на котором
                             работает программа 1С.
                         </p>
                     </article>
                 </div>
-                <div class="small-12 large-4 columns hide-for-medium-only" style="border: 1px solid black">
-                    <h3>Ограничения есть?</h3>
+                <div class="small-12 large-4 columns hide-for-medium-only">
+                    <h3 class="title">Ограничения есть?</h3>
+
                     <p>
                         Количество товаров, которое можно выгрузить ограничено возможностями сервера, на котором
                         работает
@@ -54,18 +73,3 @@ title: Взаимосвязь интернет-магазина и 1С
         </div>
     </div>
 </div>
-<article data-ng-controller="signupCtrl as signup">
-    <header data-ng-init="signup.activate()">
-        <div class="row"><h3>Начать использовать</h3></div>
-    </header>
-    <section>
-        <div class="row" data-ng-if="!signup.invite">
-            <input type="text" data-ng-model="signup.email">
-            <button type="button" class="button ng-cloak" data-ng-click="signup.sendInvite()">Получить приглашение
-            </button>
-        </div>
-        <div class="row" data-ng-if="signup.invite">
-            Приглашение отправлено на {| signup.email |}
-        </div>
-    </section>
-</article>

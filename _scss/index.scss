@@ -18,3 +18,12 @@
         min-height: 300px;
     }
 }
+.container {
+    &__text-gray {
+        color: #555;
+    }
+    .title {
+        margin-top: 34px;
+        color: #222222;
+    }
+}

@@ -1,4 +1,5 @@
 .it-footer {
+    margin-top: 1.3rem;
     .fa {
         font-size: 2.6rem;
         color: #FF7F51;
@@ -8,7 +9,7 @@
         padding-top: 13px;
         font-weight: 300;
         .logo-piece-top {
-            width: 144px;
+            width: 8rem;
         }
         a {
             color: #FE7F2D;
@@ -30,10 +31,10 @@
     .footer-b-piece {
         background-color: #61626F;
         .logo-piece-bottom {
-            width: 144px;
+            width: 8rem;
         }
         .copyright {
-            margin: 21px 0 55px;
+            margin: 1.3rem 0 2rem;
         }
     }
 }
