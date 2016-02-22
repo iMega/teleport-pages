@@ -1,0 +1,10 @@
+@import "sections/banner";
+.container {
+    &__text-gray {
+        color: #555;
+    }
+    .title {
+        margin-top: 34px;
+        color: #222222;
+    }
+}

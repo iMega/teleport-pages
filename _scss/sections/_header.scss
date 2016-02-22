@@ -1,0 +1,13 @@
+.it-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(#000, 0.1); /*#2C2D37;*/
+    color: #fff;
+    border-bottom: 1px solid rgba(#fff, 0.7);
+    h1{
+        font-size: 34px;
+        margin: 10px;
+    }
+}

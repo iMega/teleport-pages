@@ -1,0 +1,105 @@
+@media (min-width: 768px) {
+    .it-poster {
+        padding-top: 160px;
+        min-height: 720px;
+        &__form {
+            &__content {
+                margin-top: 60px;
+            }
+            h3 {
+                font-size: 28px;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+        &__text {
+            &, &_big, &_medium{
+                margin: 30px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .it-poster {
+        padding-top: 70px;
+        min-height: 420px;
+        &__text {
+            &, &_big, &_medium{
+                text-align: center;
+                margin: 15px 0;
+            }
+        }
+        &__form {
+            h3 {
+                font-size: 20px;
+            }
+            button {
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+.it-poster {
+    background: #253340 url('/img/bg-header.jpg') no-repeat 50% top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-weight: 200;
+    color: #fff;
+    &__text {
+        color: #ff6f57;
+        &_big {
+            color: #FFF;
+            font-size: 5rem;
+            font-weight: 100;
+        }
+        &_medium {
+            color: rgba(#fff, 0.8);
+        }
+    }
+    &__form {
+        position: relative;
+        min-height: 200px;
+        margin: auto;
+        &__content {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 10px;
+            background: rgba(#000, 0.5);
+        }
+        h3 {
+            font-weight: 200;
+            margin-bottom: 20px;
+        }
+        button {
+            border: 2px solid #ec6952;
+            background: none;
+            margin: 20px 0 0 0;
+            transition: all 0.2s;
+            &:focus {
+                background: none;
+            }
+            &:hover, &:active, &:focus {
+                outline: none;
+                background: #ec6952;
+            }
+        }
+        input {
+            &, &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+            border-radius: 3px;
+            border: 1px solid #efefef;
+            background: rgba(#fff, 0.8);
+            transition: all 0.2s;
+        }
+    }
+}
+

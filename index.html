@@ -5,26 +5,33 @@ title: Взаимосвязь интернет-магазина и 1С
 <article class="it-poster" data-ng-controller="signupCtrl as signup">
     <div class="row">
         <section class="small-12 medium-6 large-6 columns">
-            <p class="msg1">Вы используете приложение 1С или МойСклад и хотите представить товар в сети интернет?</p>
-
-            <p class="msg2">Легко!</p>
-
-            <p class="msg3">iMegaTeleport обеспечивает взаимосвязь интернет-магазина и приложения управляющего
-                торговлей.</p>
+            <div class="it-poster__text">Вы используете приложение 1С или МойСклад и хотите представить товар в сети
+                интернет?
+            </div>
+            <div class="it-poster__text_big">Легко!</div>
+            <div class="it-poster__text_medium">iMegaTeleport обеспечивает взаимосвязь интернет-магазина и приложения
+                управляющего
+                торговлей.
+            </div>
         </section>
-        <section class="small-12 medium-6 large-6 columns signup">
-            <div class="small-offset-1 large-offset-3 small-10 large-7">
-                <div data-ng-init="signup.activate()">
-                    <div class="row"><h3>Начать использовать</h3></div>
-                </div>
-                <div class="row" data-ng-if="!signup.invite">
-                    <input type="text" class="large" data-ng-model="signup.email">
-                    <button type="button"
-                            class="button ng-cloak"
-                            data-ng-click="signup.sendInvite()">Получить приглашение</button>
-                </div>
-                <div class="row" data-ng-if="signup.invite">
-                    Приглашение отправлено на {| signup.email |}
+        <section class="small-12 medium-6 large-6 columns ">
+            <div class="small-11 medium-10 large-8 it-poster__form">
+                <div class="it-poster__form__content">
+                    <div data-ng-init="signup.activate()">
+                        <div class="small-12"><h3>Начать использовать</h3></div>
+                    </div>
+                    <div class="small-12" data-ng-if="!signup.invite">
+                        <input type="text" class="large" data-ng-model="signup.email">
+                        <div class="text-center">
+                            <button type="button"
+                                    class="button ng-cloak"
+                                    data-ng-click="signup.sendInvite()">Получить приглашение
+                            </button>
+                        </div>
+                    </div>
+                    <div class="small-12 text-center" data-ng-if="signup.invite">
+                        Приглашение отправлено на {| signup.email |}
+                    </div>
                 </div>
             </div>
         </section>
