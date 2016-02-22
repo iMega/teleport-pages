@@ -52,9 +52,12 @@
     font-weight: 200;
     color: #fff;
     &__text {
-        color: #ff6f57;
+        &_notice{
+            color: #FE7F2D;
+            font-size: 1.5rem;
+        }
         &_big {
-            color: #FFF;
+            color: #fff;
             font-size: 5rem;
             font-weight: 100;
         }
@@ -75,12 +78,14 @@
         }
         h3 {
             font-weight: 200;
+            color: #fff;
             margin-bottom: 20px;
         }
         button {
             border: 2px solid #ec6952;
             background: none;
             margin: 20px 0 0 0;
+            line-height: 20px;
             transition: all 0.2s;
             &:focus {
                 background: none;

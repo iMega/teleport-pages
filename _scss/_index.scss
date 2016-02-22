@@ -1,10 +1,21 @@
 @import "sections/banner";
+@import "components/card-block";
+
 .container {
-    &__text-gray {
+    background: #fafafa;
+    &__text {
         color: #555;
+        & > .columns {
+            display: flex;
+        }
     }
-    .title {
-        margin-top: 34px;
-        color: #222222;
+    .card-block {
+        display: flex;
+        margin: 2rem 0;
+
+        p {
+            font-weight: 300;
+            font-size: 1rem;
+        }
     }
 }
