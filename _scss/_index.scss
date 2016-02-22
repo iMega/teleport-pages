@@ -3,6 +3,7 @@
 
 .container {
     background: #fafafa;
+    padding-bottom: 40px;
     &__text {
         color: #555;
         & > .columns {
@@ -11,7 +12,7 @@
     }
     .card-block {
         display: flex;
-        margin: 2rem 0;
+        margin-top: 2rem;
 
         p {
             font-weight: 300;
